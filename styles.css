@@ -43,6 +43,15 @@ body{
     font-family: "Michroma", sans-serif;
 }
 
+ span{
+    display: block; /* Blocca gli span per una disposizione verticale */
+    height: 4px;    /* Altezza della linea */
+    width: 35px;    /* Larghezza della linea */
+    background-color: #f5f5f5; /* Colore della linea */
+    margin: 6px 0;  /* Distanza tra le linee */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animazione fluida */
+}
+
 
 
 
