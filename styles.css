@@ -41,7 +41,16 @@ body {
     padding: 2vh;
 }
 
+/* Il contenitore principale del menu */
+
+.menu-section {
+  position: relative;
+  width: 100%;
+  padding: 1vh;
+}
+
 .header-section {
+  
     display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,8 +64,10 @@ body {
 #hamburger-icon {
   cursor: pointer;
   padding: 5px;
-  /* Aggiungiamo spazio intorno all'icona per un'area di click più ampia */
-  z-index: 1001; /* Assicura che rimanga sempre cliccabile */
+  
+  z-index: 1001;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+
 }
 
 #spn {
@@ -80,25 +91,22 @@ body {
 #hamburger-icon.active #spn:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
-.menu-section {
-  position: relative;
-  width: 100%;
-  padding: 1vh;
-}
 
+/* Il menu dropdown */
 .nav-menu-section {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   background-color: #04041b;
-  padding: 20px 0;
+  padding: 0px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   /* Aggiungi queste proprietà */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 
@@ -108,7 +116,7 @@ body {
 }
 
 .nav-menu-section ul li{
-    margin-top: 1vh;
+    margin-top: 4vh;
     font-size: 23px;
     text-align: center;
 }
